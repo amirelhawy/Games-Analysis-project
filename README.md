@@ -60,7 +60,7 @@ where critic_score is null and user_score is null
 |31 | 
 
 
-- like we said at first we wwork with the top 400  the best-selling video games after we make join between <code>game_sales</code> , <code>reviews</code> tables    
+- like we said at first we work with the top 400  the best-selling video games after we make join between <code>game_sales</code> , <code>reviews</code> tables    
 - We learned that around 10% of games have no reviews. There might be a variety of reasons for this.
 
 ## 3. Years that video game critics loved

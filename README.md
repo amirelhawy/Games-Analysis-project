@@ -1,4 +1,5 @@
-# Games-Analysis-project 
+# Video-games-Analysis-report
+
 ## Gaming industry 
 
 Video games are big business: the global gaming market is projected to be worth more than $300 billion by 2027 

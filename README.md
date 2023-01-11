@@ -49,14 +49,14 @@ its very important to know the limitations of our data
 -- Select a count of the number of games where both critic_score and user_score are null
 
 ```sql
-SELECT count(*)
+SELECT count(*) as games_count 
 from game_sales 
 left join reviews 
 on reviews.game = game_sales.game 
 where critic_score is null and user_score is null
 ```
 
-| count | 
+| games_count | 
 | ---- | 
 |31 | 
 
@@ -165,7 +165,7 @@ order by avg_critic_score desc
 ```sql
 select year , round (avg (user_score),2) as avg_user_score , count (game_sales.game) as num_games
 from game_sales
-game_sales join reviews
+join reviews
 on reviews.game = game_sales.game
 group by year
 having count(game_sales.game)>= 4
